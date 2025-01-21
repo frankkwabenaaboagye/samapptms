@@ -47,7 +47,7 @@ stepfunctions = assignStepFnx()
 
 myHeaders = {
     'Access-Control-Allow-Headers': 'X-Forwarded-For,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,access-control-allow-origin,access-control-allow-credentials',
-    'Access-Control-Allow-Origin': 'https://main.d3p2bymp0gir41.amplifyapp.com',
+    'Access-Control-Allow-Origin': 'https://main.d3aar2vaqxwbk9.amplifyapp.com',
     'Access-Control-Allow-Methods': 'POST, GET, PUT, OPTIONS, DELETE',
     'Access-Control-Allow-Credentials': 'true'
 }
@@ -473,7 +473,7 @@ def create_email_message(task):
     
     Note: This task must be completed by {task['deadline']}
     
-    System Link: https://main.d3p2bymp0gir41.amplifyapp.com
+    System Link: https://main.d3aar2vaqxwbk9.amplifyapp.com
     
     This is an automated message. Please do not reply to this email.
     """

@@ -14,7 +14,7 @@ Parameters:
   SystemUrl:
     Type: String
     Description: The URL of my angular frontend application
-    Default: https://main.d3p2bymp0gir41.amplifyapp.com
+    Default: https://main.d3aar2vaqxwbk9.amplifyapp.com
 
   DummyPlaceholder:
     Type: String
@@ -47,7 +47,7 @@ Resources:
       Cors:
         AllowMethods: '''POST, GET, PUT, OPTIONS, DELETE'''
         AllowHeaders: '''X-Forwarded-For,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,access-control-allow-origin,access-control-allow-credentials'''
-        AllowOrigin: '''https://main.d3p2bymp0gir41.amplifyapp.com'''
+        AllowOrigin: '''https://main.d3aar2vaqxwbk9.amplifyapp.com'''
         AllowCredentials: true
       Auth:
         AddDefaultAuthorizerToCorsPreflight: false
@@ -390,10 +390,10 @@ Resources:
         - profile
       CallbackURLs:
         # - http://localhost:4200/authorize # will change this later
-        - https://main.d3p2bymp0gir41.amplifyapp.com/authorize
+        - https://main.d3aar2vaqxwbk9.amplifyapp.com/authorize
       LogoutURLs:
         # - http://localhost:4200/ # will change this later
-        - https://main.d3p2bymp0gir41.amplifyapp.com
+        - https://main.d3aar2vaqxwbk9.amplifyapp.com
       SupportedIdentityProviders:
         - COGNITO
       ExplicitAuthFlows:
@@ -754,7 +754,7 @@ Resources:
             Method: get
             RestApiId: !Ref ApiGatewayApi
       Tags:
-        purpose: testing purpose
+        purpose: testing
 
   CreateTaskFunction:
     Type: AWS::Serverless::Function
