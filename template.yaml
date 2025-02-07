@@ -30,6 +30,9 @@ Resources:
       Runtime: python3.12
       Architectures:
         - x86_64
+      Environment:
+        Variables:
+          DUMMY_PLACEHOLDER: !Ref DummyPlaceholder # will take it out
       Policies:
         - AWSLambdaBasicExecutionRole
       Events:
