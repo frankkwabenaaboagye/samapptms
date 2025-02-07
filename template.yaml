@@ -958,7 +958,7 @@ Resources:
           DEADLINE_QUEUE_URL: !Ref DeadlineNotificationQueue
           EXPIRED_TASKS_QUEUE: !Ref ExpiredTasksQueue
           SYSTEM_URL: !Ref SystemUrl
-          DUMMY_PLACEHOLDER: !Ref DummyPlaceholder # will take it out
+          # DUMMY_PLACEHOLDER: !Ref DummyPlaceholder # will take it out
       Policies:
         - DynamoDBCrudPolicy:
             TableName: !Ref TasksTable
@@ -978,7 +978,7 @@ Resources:
       # Description: "Trigger deadline checker every hour"
       # ScheduleExpression: "rate(1 hour)", "rate(5 minutes)", rate(1 min)
       Description: Trigger deadline checker every three minute
-      ScheduleExpression: rate(3 minutes) # for the purpose of demo # rate(1 hour) # Changed from 1 hour, rate(1 day)
+      ScheduleExpression: rate(1 day) # for the purpose of demo # rate(1 hour) # Changed from 1 hour, rate(1 day)
       State: ENABLED
       Targets:
         - Arn: !GetAtt DeadlineCheckerFunction.Arn
