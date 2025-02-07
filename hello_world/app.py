@@ -607,7 +607,7 @@ def publish_to_sns_task_deadline(task, email_message):
             }
         )
 
-        return response;
+        return response
     
     except Exception as e:
         print(f"Error publishing to SNS: {str(e)}")

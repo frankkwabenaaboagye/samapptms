@@ -1172,6 +1172,7 @@ Resources:
         Variables:
           DEADLINE_TOPIC_ARN: !Ref TasksDeadlineNotificationTopic
           SYSTEM_URL: !Ref SystemUrl
+          DUMMY_PLACEHOLDER: !Ref DummyPlaceholder # will take it out
       Events:
         SQSTaskDeadlineEvent:
           Type: SQS
