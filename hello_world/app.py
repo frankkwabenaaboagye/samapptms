@@ -952,7 +952,7 @@ def check_the_deadline(event, context):
 
     # now = datetime.now(timezone.utc).replace(tzinfo=None).isoformat()
     now = datetime.now(timezone.utc)
-    one_minute_from_now = now + timedelta(minutes=60) # will change this time
+    one_minute_from_now = now + timedelta(minutes=3) # will change this time
     
     logger.info(f"Checking for tasks between {now.replace(tzinfo=None).isoformat()} and {one_minute_from_now.replace(tzinfo=None).isoformat()}")
     
